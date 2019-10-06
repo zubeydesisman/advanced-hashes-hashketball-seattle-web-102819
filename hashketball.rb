@@ -149,9 +149,43 @@ def team_colors(team_name)
     end
   end
  def team_names
+   new_array =[]
    game_hash.each do |place,team|
-     binding.pry
+     new_array << team[:team_name]
    end
+   new_array
+ end
+  def player_numbers(team_name)
+    nums = []
+    game_hash.each do |place,team|
+      if team[:team_name] == team_name
+        team.each do |attributes,data|
+       if attributes  == :players
+         data.each do |player|
+            nums << player[:number]
+          end
+        end
+      end
+    end
+  end
+    nums
+  end
+  def player_stats(players_name)
+    new_hash = {}
+    game_hash.each do |place,team|
+      team.each do |attributes,data|
+        if attributes == :players 
+          data.each do |player|
+          if player[:player_name] == players_name
+            new_hash  =  player.delete_if do |k,v|
+              k == :player_name
+      end
+    end
+  end
+  end
+ end
+ end
+ new_hash
  end
 
 
