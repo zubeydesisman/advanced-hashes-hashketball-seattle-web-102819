@@ -219,14 +219,16 @@ def big_shoe_rebounds()
   person
 end
  def winning_team
+   score1 = []
+   score2 = []
    game_hash.each do |place,team|
       team.each do|attributes,data|
       if attributes == :players 
         data.each do |player|
      # if place == :home
-   #score1 = player[:points].sum
+   #score1 = player[:points]
       if place == :away 
-     score2 = player[:points].sum
+     score2 = player[:points]
       binding.pry
           end 
         end
