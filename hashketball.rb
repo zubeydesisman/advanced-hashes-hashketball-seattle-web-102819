@@ -264,13 +264,13 @@ end
             if player[:steals] > steal
              steal = player[:steals]
                if players[:player_name] = longest_name && players[:steals] > steal
-               #return "true"
+               return "true"
              end
            end
          end
        end
      end
-   return "true"
+   #return "true"
  end
   
   
