@@ -272,7 +272,7 @@ end
        end
      end
      if player_with_longest_name == name
-       return "true"
+       return true
   end 
 
   
