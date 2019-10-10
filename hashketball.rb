@@ -264,7 +264,7 @@ end
            data.each do |player|
             if player[:steals] > steal
              steal = player[:steals]
-               if players[:player_name] = var && players[:steals] > steal
+               if players[:player_name] = var && var[:steals] > steal
                return "true"
              end
            end
