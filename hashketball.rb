@@ -226,7 +226,7 @@ end
       if attributes == :players 
         data.each do |player|
      if place == :home
-   score1.push(player[:points])
+   score1 << player[:points]
       
       binding.pry
           end 
