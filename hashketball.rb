@@ -226,9 +226,8 @@ end
           binding.pry
    score1 = data[:home][:points].sum
    score2 = data[:away][:points].sum
-  end 
-end
-  
+          end 
+      end
    end   
      end 
    end
