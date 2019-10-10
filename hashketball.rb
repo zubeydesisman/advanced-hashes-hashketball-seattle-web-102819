@@ -227,6 +227,7 @@ end
       if attributes == :players 
         data.each do |player|
        score1 << player[:points]
+       
           end 
         end
        end   
