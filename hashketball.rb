@@ -255,7 +255,7 @@ end
   end
     longest_name
   end
- def player_with_longest_name(longest_name)
+ def player_with_longest_name
    var = player_with_longest_name
      steal = 0
      game_hash.each do |place,team|
