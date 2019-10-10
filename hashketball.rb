@@ -256,8 +256,22 @@ end
     longest_name
   end
  def player_with_longest_name(longest_name)
-   if 
-   
+     steal = 0
+     game_hash.each do |place,team|
+      team.each do|attributes,data|
+        if attributes == :players 
+           data.each do |player|
+            if player[:steals] > steal
+             steal = player[:steals]
+               if players[:player_name] = longest_name && players [:steals] > steal
+               #return "true"
+             end
+           end
+         end
+       end
+     end
+   end
+   return "true"
  end
   
   
