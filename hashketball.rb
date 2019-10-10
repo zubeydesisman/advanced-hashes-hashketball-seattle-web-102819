@@ -221,15 +221,10 @@ end
  def winning_team
    score = {}
    game_hash.each do|place,team|
-   team.each do |attributes,data|
-     if attributes = :places 
-       data.each do|player|
+  
        binding.pry
      end 
    end
- end
- end 
- end
      
 
   
