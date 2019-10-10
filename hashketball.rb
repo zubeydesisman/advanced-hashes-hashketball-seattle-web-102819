@@ -218,9 +218,8 @@ def big_shoe_rebounds()
   end
   person
 end
- def winning_team
-   score = {}
-   game_hash.each do|place,team|
+ def winning_team(data)
+   score1 = data[:players][:points].sum
   
   
   
