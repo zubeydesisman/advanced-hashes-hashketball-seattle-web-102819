@@ -226,8 +226,8 @@ end
         if place == :home
    score1 = players[:points].sum 
           end 
-      end
-   end   
+        end
+       end   
      end 
    end
      
