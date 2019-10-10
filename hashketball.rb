@@ -223,8 +223,8 @@ end
       team.each do|attributes,data|
       if attributes == :players 
         data.each do |player|
-      if place == :home
-   score1 = player[:points].sum
+     # if place == :home
+   #score1 = player[:points].sum
       if place == :away 
      score2 = player[:points].sum
       binding.pry
@@ -234,7 +234,7 @@ end
      end 
    end
    end  
-end
+
  
   
   
