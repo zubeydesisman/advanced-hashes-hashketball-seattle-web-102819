@@ -256,23 +256,25 @@ end
     longest_name
   end
  def player_with_longest_name
-   var = player_with_longest_name
+   #var = player_with_longest_name
      steal = 0
+     name = ""
      game_hash.each do |place,team|
       team.each do|attributes,data|
         if attributes == :players 
            data.each do |player|
             if player[:steals] > steal
              steal = player[:steals]
-               if players[:player_name] = var && var[:steals] > steal
-               return "true"
-             end
+             name = player[:player_name]
+            end
            end
          end
        end
      end
+     if player_with_longest_name == name
+       return "true"
   end 
- end
+
   
   
   
