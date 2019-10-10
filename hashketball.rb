@@ -222,6 +222,8 @@ end
    score = {}
    game_hash.each do|place,team|
   
+  
+  
        binding.pry
      end 
    end
