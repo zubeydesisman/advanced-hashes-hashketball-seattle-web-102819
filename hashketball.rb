@@ -224,7 +224,7 @@ end
    team.each do |attributes,data|
      if attributes = :places 
        data.each do|player|
-       score[:v] += player [:points]
+       #score[:v] += player [:points]
        binding.pry
      end 
    end
