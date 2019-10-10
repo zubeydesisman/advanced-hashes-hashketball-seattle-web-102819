@@ -263,7 +263,7 @@ end
            data.each do |player|
             if player[:steals] > steal
              steal = player[:steals]
-               if players[:player_name] = longest_name && players [:steals] > steal
+               if players[:player_name] = longest_name && players[:steals] > steal
                #return "true"
              end
            end
