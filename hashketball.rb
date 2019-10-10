@@ -225,6 +225,7 @@ end
         data.each do |player|
         if place == :home
    score1 = players[:points].sum 
+      binding.pry
           end 
         end
        end   
