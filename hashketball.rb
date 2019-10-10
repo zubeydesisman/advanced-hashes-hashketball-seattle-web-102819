@@ -219,22 +219,29 @@ def big_shoe_rebounds()
   person
 end
  def winning_team
-   score1 = []
-   score2 = []
-   game_hash.each do |place,team|
-     if team[:team_name] = "Brooklyn Nets"
-      team.each do|attributes,data|
-      if attributes == :players 
-        data.each do |player|
-       score1 << player[:points]
+    score1 = []
+    score2 = []
+      game_hash.each do |place,team|
+        if team[:team_name] = "Brooklyn Nets"
+           team.each do|attributes,data|
+             if attributes == :players 
+               data.each do |player|
+                 score1 << player[:points]
+               end
+             end
+           end
+         else
+           score2 << player[:points]
+         end
+         if score1.sum > score2.sum 
+           return "Brooklyn Nets"
+         else
+           return "Charlotte Hornets"
+         end
+       end
+     end
        
-          end 
-        end
-       end   
-     end 
-   end
-   end  
-
+      
  
   
   
