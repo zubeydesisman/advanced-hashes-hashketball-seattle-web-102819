@@ -222,13 +222,11 @@ end
    score1 = []
    score2 = []
    game_hash.each do |place,team|
+     if team[:team_name] = "Brooklyn Nets"
       team.each do|attributes,data|
       if attributes == :players 
         data.each do |player|
-     if place == :home
-   score1 << player[:points]
-      
-      binding.pry
+       score1 << player[:points]
           end 
         end
        end   
