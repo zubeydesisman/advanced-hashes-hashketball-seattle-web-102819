@@ -218,7 +218,7 @@ def big_shoe_rebounds()
   end
   person
 end
- def winning_team(data)
+ def winning_team
    game_hash.each do |place,team|
       team.each do|attributes,data|
       if attributes == :players 
